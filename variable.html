@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a=10 // no need for integer or semicolon
+        var b="ram"
+        var c= true
+        var d=30.5
+        var e=["ram",34,true,"raj"] // array
+
+        var f={ //object 
+            name: "ram",
+            city:"gwalior",
+            phone:896278,
+            team:["ram",45,true],
+            user:function()
+            {
+                document.write("Hello user")
+            },
+           add:function(x,y)
+           {
+            return x+y
+           }
+        }
+        
+//can't directly print object, how to do then??
+        document.write(f.name+"<br>")
+        f.user()
+        document.write("<br>")
+        document.write(f.add(f.name,f.city))
+        
+        document.write("<br>",a)
+        console.log(a) //prints on console
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
