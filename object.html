@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let user={
+            name:"ram",
+            city:"gwalior",
+            phone:5888999,
+            team:["ram",34,true],
+            pn:function()
+            {
+                document.write("hello pn")
+            }
+        }
+
+        console.log(user) // can be directly printed only on the console not browser
+
+        document.write(user.name+"<br>")
+
+        //to convert an object into string use JSON
+        document.write(JSON.stringify(user)+"<br>")
+        user.pn()
+    </script>
+    
+
+</head>
+<body>
+    
+</body>
+</html>
